@@ -175,5 +175,34 @@ li button {
     .items {
         display: none;
     }
+    body {
+        background-image: url("langingpgbg.png");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+    }
+}
+    @media (max-width: 1024px) {
+        .head {
+            margin: 1rem;
+        }
+        .rem {
+            margin: 2rem;
+        }
+        .list-item {
+            font-size: 0.8rem;
+        }
+        .items {
+            display: none;
+        }
+        body {
+            background-image: url("langingpgbg.png");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+    
 }
 
