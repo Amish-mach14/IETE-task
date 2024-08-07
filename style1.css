@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.2rem;
+    background-color:white;
+    height: 2rem;
+    border-radius: 0.5rem;
+    color:#0f1111;
+}
+.search-icon:hover {
+    cursor: pointer;
+}
+.Enter1{
+    width: 12rem;
+    margin-right: 0.25rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40rem;
+}
+.item {
+    padding:15px;
+}
+.content2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading2 {
+    font-size: 12px;
+}
+
+.heading{
+    font-family:"Great Vibes", cursive;
+    font-size: 4rem;
+}
+
+/* body */
+
+body {
+    background-color: #C1CEFE;
+    font-family: Arial, sans-serif;
+    background-image: url("langingpgbg.png");
+    background-size: cover;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    margin: 5rem 20rem 1rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color: #371e1e;
+}
+button {
+    margin: 0.25rem;
+    width: 5rem;
+    height: 2rem;
+}
+.Enter {
+    width: 12rem;
+    margin-right: 0.25rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+.search {
+    border-radius: 0.5rem;
+}
+.clear {
+    border-radius: 0.5rem;
+}
+.rem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 20rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    /* margin-right: 30rem; */
+    background-color: black;
+}
+.list1 {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+ul.list {
+    list-style-type: none;
+    padding: 0;
+}
+.list-item {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    /* background-color: #007bff; */
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    word-wrap: break-word; 
+}
+li button {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+}
+@media (max-width: 768px) {
+    .head {
+        margin: 2rem;
+    }
+    .rem {
+        margin: 2rem;
+    }
+    .list-item {
+        font-size: 1rem;
+    }
+    .items {
+        display: none;
+    }
+    body {
+        background-image: url("langingpgbg.png");
+        background-size: cover; /* Ensures the image covers the entire viewport */
+        background-position: center; /* Centers the image in the viewport */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+    }
+    
+}
+@media (max-width: 480px) {
+    .head {
+        margin: 1rem;
+    }
+    .rem {
+        margin: 2rem;
+    }
+    .list-item {
+        font-size: 0.8rem;
+    }
+    .items {
+        display: none;
+    }
+}
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: #00272B;
+}
+.head-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: 2px solid #333;
+    border-radius: 1rem;
+    background-color: #00272B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+input.enter {
+    width: 14rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+button {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.list-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ul.list {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.5rem;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li button {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+    input.enter {
+        width: 100%;
+        margin: 0 0 0.5rem;
+    }
+    .list-container {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    li {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+} */
